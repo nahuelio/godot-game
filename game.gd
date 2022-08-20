@@ -1,5 +1,5 @@
 class_name Game, "res://icon.png"
-extends SceneTree
+extends Node
 
 func _init() -> void:
 	.init()
