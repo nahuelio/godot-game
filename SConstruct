@@ -17,9 +17,10 @@ godot_headers_path = "../godot-cpp/godot-headers/"
 cpp_bindings_path = "../godot-cpp/"
 cpp_library = "libgodot-cpp"
 
-#
-# TODO: Build GDNative modules
-#
+# TODO: Continue working here to improve local development experience
+# 1) Compile GDNative modules
+# 2) Launch godot in debugging mode
+# 3) Unit tests
 
 # Support 64
 bits = 64

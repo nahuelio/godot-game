@@ -5,21 +5,21 @@
  * @see https://docs.godotengine.org/en/stable/tutorials/scripting/gdnative/gdnative_cpp_example.html
  */
 
-#ifndef GODOT_GAME_GDEXAMPLE_H
-#define GODOT_GAME_GDEXAMPLE_H
+#ifndef GODOT_GAME_GAME_H
+#define GODOT_GAME_GAME_H
 
 #include <core/Godot.hpp>
 #include <gen/Sprite.hpp>
 
 namespace godot {
-	class GDExample : public Sprite {
-		GODOT_CLASS(GDExample, Sprite)
+	class GDGame : public Sprite {
+		GODOT_CLASS(GDGame, Sprite)
 
 	public:
 		static void _register_methods();
 
-		GDExample();
-		~GDExample();
+		GDGame();
+		~GDGame();
 
 		void _init();
 
@@ -27,4 +27,4 @@ namespace godot {
 	};
 }
 
-#endif //GODOT_GAME_GDEXAMPLE_H
+#endif //GODOT_GAME_GAME_H
