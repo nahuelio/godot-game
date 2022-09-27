@@ -1,0 +1,39 @@
+# Main build process
+on:
+  push:
+    tags:
+      - "*.*.*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build
+    steps:
+      - name: Checking out
+        uses: actions/checkout@v3.0.2
+        with:
+          fetch-depth: 0
+      - name: Dependencies
+        id: dependencies
+        run: |
+          sudo apt install wine64
+          echo ::set-output name=WINE_PATH::$(which wine64)
+      - name: Tagging
+        id: tag_version
+        run: |
+          echo ::set-output name=TAG_VERSION::${GITHUB_REF#refs/tags/v}
+      - name: Compiling
+        id: export
+        uses: firebelley/godot-export@v4.2.0
+        with:
+          godot_executable_download_url: https://github.com/godotengine/godot/releases/download/3.5-stable/Godot_v3.5-stable_linux_headless.64.zip
+          godot_export_templates_download_url: https://github.com/godotengine/godot/releases/download/3.5-stable/Godot_v3.5-stable_export_templates.tpz
+          wine_path: ${{ steps.dependencies.outputs.WINE_PATH }}
+          relative_project_path: ./
+          archive_output: true
+      - name: Releasing
+        uses: softprops/action-gh-release@v0.1.14
+        with:
+          files: |
+            Release.txt
+            LICENSE

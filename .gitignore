@@ -1,9 +1,12 @@
 # IDE
 .idea
 .vscode
+.cmake-build-debug
 
 # Project
 .mono
+.import
+release
 
 # OS
 .DS_Store

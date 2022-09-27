@@ -15,14 +15,14 @@ _global_script_classes=[ {
 "path": "res://views/game.gd"
 } ]
 _global_script_class_icons={
-"Game": "res://icon.png"
+"Game": "res://assets/icons/icon.png"
 }
 
 [application]
 
 config/name="game"
 run/main_scene="res://scenes/game.tscn"
-config/icon="res://icon.png"
+config/icon="res://assets/icons/icon.png"
 
 [display]
 
@@ -40,4 +40,4 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/default_environment="res://config/default_env.tres"

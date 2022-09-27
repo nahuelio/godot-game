@@ -1,0 +1,5 @@
+# Code Owners
+
+.*				@nahuelio/core
+.github			@nahuelio/core
+SConstruct		@nahuelio/core
