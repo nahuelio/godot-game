@@ -5,3 +5,9 @@
 ```TODO```
 
 ### Development
+
+- Windows
+```TODO```
+
+- Mac OSX
+```TODO```

@@ -6,7 +6,11 @@
 # Project
 .mono
 .import
+backup
 release
+pyvenv.cfg
+bin
+lib
 
 # OS
 .DS_Store
