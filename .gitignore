@@ -6,6 +6,7 @@
 # Project
 .mono
 .import
+.scons*
 backup
 release
 pyvenv.cfg

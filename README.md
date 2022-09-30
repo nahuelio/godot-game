@@ -6,7 +6,9 @@
 
 ### Development
 
-- Windows
+Compiler: Clang - C17++ 
+
+- Windows (Msys)
 ```TODO```
 
 - Mac OSX
