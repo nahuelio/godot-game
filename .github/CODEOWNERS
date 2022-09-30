@@ -3,3 +3,4 @@
 .*				@nahuelio/core
 .github			@nahuelio/core
 SConstruct		@nahuelio/core
+scripts			@nahuelio/core
